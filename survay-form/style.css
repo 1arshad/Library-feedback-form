@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*font-family: 'Poppins', sans-serif;*/
+}
+.main-div{
+	height: auto;
+	width: 100%;
+	background-color: #bdc3c7;
+	
+	
+}
+.middle-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+
+}
+.main-div .middle-div h1{
+	font-size: 45px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+	
+	
+}
+.main-div .middle-div p{
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+
+.main-div .middle-div label{
+	font-size: 18px;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 1px;
+}
+.main-div .middle-div select{
+	width: 100%;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+}
+.main-div .middle-div .subject li,.main-div .middle-div  .userRating .rate{
+	font-size: 25px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 550;
+	letter-spacing: 1px;
+	list-style-type: square;
+	
+}
+.main-div .middle-div .subject .form-check{
+	margin-left: 35px;
+	margin-top: 5px;
+}
+.main-div .middle-div .subject .form-check input[type="checkbox"]{
+	margin-top: 7px;
+	margin-right:   20px;
+
+}
+
+
+.main-div .middle-div  .userRating ol li{
+	font-size: 20px;
+	margin-top: 25px;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+
+
+}
+.main-div .middle-div .userRating  input[type="radio"]{
+	
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.main-div .middle-div .userRating  span{
+	font-size: 15px; 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	margin-left: 10px;
+	letter-spacing: 1px;
+}
+.main-div .middle-div .userRating .form-group-1{
+	margin-top: 50px;
+}
+
+.main-div .middle-div .suggestion{
+	margin-top: 80px;
+}
+.main-div .middle-div .suggestion textarea{
+	margin-top: 10px;
+}
+.main-div .middle-div hr{
+	height: 5px;
+	background-color: black;
+	margin: 30px 0;
+}
+
+/*---------responsive---------*/
+
+@media(max-width: 1014px){
+	.main-div .middle-div .userRating  input[type="radio"]{
+	
+	/*margin-left: 5%;
+	margin-top: 2%;*/
+	margin: 2% auto 0 4%;
+}
+}
+
+@media(max-width: 778px){
+	.main-div .middle-div .userRating  input[type="radio"]{
+		/*display: block;*/
+		
+	}
+	
+	.main-div .middle-div .userRating  span{
+		display: block;
+		margin-left: 40px;
+		margin-top: -23px;
+		font-size: 90%;
+		margin-bottom: 10px;
+
+	}
+	.main-div .middle-div h1{
+		font-size: 170%;
+	}
+	.main-div .middle-div p{
+		font-size: 100%;
+		text-align: center;
+	}
+	.main-div .middle-div hr{
+		margin: auto 0 10px 0;
+	}
+	.main-div .middle-div .subject li,.main-div .middle-div  .userRating .rate{
+		font-size: 110%;
+		margin: auto 0;
+		padding: auto;
+		
+	}
+	.main-div .middle-div  .userRating ol li{
+		font-size: 100%;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+}
+
+
+	
+

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <title>Survay-Form</title>
+  </head>
+  <body>
+    <div class="main-div ">
+      <div class="container middle-div bg-light shadow">
+        
+        <!-- heading -->
+        <h1 class="mt-4 " id="title">Library Feedback Form</h1>
+        <p id="description" class="mt-1">Please fill the following feedback form for college library.</p>
+
+        <hr class="w-75">
+        <!-- form -->
+      <form id="survey-form">
+        <div class=" mt-2 px-5">
+        <div class="form-group">
+          <label id="name-label">Name</label>
+          <input type="name" id="name" class="form-control" required placeholder="Enter Your Name">
+      </div>
+      <div class="form-group">
+        <label id="email-label">Email Id</label>
+        <input type="email" class="form-control" id="email" required placeholder="Enter Your Email Id">
+      </div>
+      <div class="form-group">
+        <label id="number-label">Semister</label>
+        <input type="number" class="form-control" id="number" min="1" max="6" required placeholder="Enter Your Semister">
+      </div>
+      <div>
+        <select id="dropdown" class="form-group mt-4">
+          <option class="form-control" value="Select Course">Select Course</option>
+          <option class="form-control" value="BCA">BCA</option>
+          <option class="form-control" value="BBA">BBA</option>
+          <option class="form-control" value="DBM">DBM</option>
+        </select>
+      </div>
+      </div>
+      <div class="mx-5 mt-4 subject">
+        <li>Select subjects you visited library for:</li>
+        <div class="mt-3">
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" value="1" >
+        <label class="form-check-label" >Programming</label>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" value="2" >
+        <label class="form-check-label" >Management</label>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" value="3">
+        <label class="form-check-label" >Accounting</label>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" value="4">
+        <label class="form-check-label" >Entrepreneurship</label>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" value="5">
+        <label class="form-check-label" >Other</label>
+      </div>
+    </div>
+      </div>
+      <div for="userRating" class=" userRating mt-5 px-5">
+        <li class="rate ml-sm-0" >To what extent you are satisfied with the following.</li>
+        <ol class="ml-5 mt-3" >
+          <div class="form-group-1">
+          <li class="que" >Are required number of title in your subject available in your library?</li>
+          <input value="1" type="radio"  name="Rating"><span>Excellent</span> 
+          <input value="2" type="radio" name="Rating"><span> Very Good</span>
+          <input value="3" type="radio" name="Rating"><span> Good </span>
+          <input value="4" type="radio" name="Rating"><span> Fair</span>
+          <input value="5" type="radio" name="Rating"><span> Poor</span>
+          </div>
+
+          <div class="form-group-1">
+          <li class="que">Are you satsfied with journals / magzines?</li>
+          <input value="1" type="radio"  name="Rating"><span>Excellent</span> 
+          <input value="2" type="radio" name="Rating"><span> Very Good</span>
+          <input value="3" type="radio" name="Rating"><span> Good </span>
+          <input value="4" type="radio" name="Rating"><span> Fair</span>
+          <input value="5" type="radio" name="Rating"><span> Poor</span>
+          </div>
+
+          <div class="form-group-1">
+          <li class="que">Are you satisfied with the arrangement of books in the Library shelves?</li>
+          <input value="1" type="radio"  name="Rating"><span>Excellent</span> 
+          <input value="2" type="radio" name="Rating"><span> Very Good</span>
+          <input value="3" type="radio" name="Rating"><span> Good </span>
+          <input value="4" type="radio" name="Rating"><span> Fair</span>
+          <input value="5" type="radio" name="Rating"><span> Poor</span>
+          </div>
+
+          <div class="form-group-1">
+          <li class="que">Are you satisfied with the available reading space in the Library?</li>
+          <input value="1" type="radio"  name="Rating"><span>Excellent</span> 
+          <input value="2" type="radio" name="Rating"><span> Very Good</span>
+          <input value="3" type="radio" name="Rating"><span> Good </span>
+          <input value="4" type="radio" name="Rating"><span> Fair</span>
+          <input value="5" type="radio" name="Rating"><span> Poor</span>
+          </div>
+
+          <div class="form-group-1">
+          <li class="que">Are you satisfied with library Wi-Fi network to access e-resources?</li>
+         <input value="1" type="radio"  name="Rating"><span>Excellent</span> 
+          <input value="2" type="radio" name="Rating"><span> Very Good</span>
+          <input value="3" type="radio" name="Rating"><span> Good </span>
+          <input value="4" type="radio" name="Rating"><span> Fair</span>
+          <input value="5" type="radio" name="Rating"><span> Poor</span>
+          </div>
+
+
+        </ol>
+        </div>
+
+        <div class="form-group suggestion px-5">
+        <label for="comment">Suggestion, If any ?</label>
+        <textarea class="form-control" rows="5" id="comment" placeholder="Enter Your Suggestion Here..."></textarea>
+        </div>
+      
+      <button type="submit" id="submit" class="btn btn-primary mx-5 mb-5 mt-4 ">Submit</button>
+    </form>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
